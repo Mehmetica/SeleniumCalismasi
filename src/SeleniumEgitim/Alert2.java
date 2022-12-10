@@ -31,7 +31,7 @@ public class Alert2 {
         // sonuna köşeli parantezde 2 yazınca 2.cisini buldu
         driver.findElement(By.cssSelector(".btn-primary")).click();
         Thread.sleep(1500);
-        driver.switchTo().alert().dismiss();
+        driver.switchTo().alert().accept();
 
 //input bekleyen uyarılar
         driver.findElement(By.xpath("(//a[@class='analystic'])[3]")).click();
@@ -39,8 +39,10 @@ public class Alert2 {
         Thread.sleep(2000);
         driver.switchTo().alert().sendKeys("Mehmet");//çıkan kutucuğa veri gönderme
         Thread.sleep(1500);
-        driver.switchTo().alert().accept();//veri gönderdikten sonra tamam a basma
+        driver.switchTo().alert().dismiss();//veri gönderdikten sonra tamam a basma
 
+        String text = driver.findElement(By.cssSelector("#demo1")).getText();
+        System.out.println(text);
 
 
 
