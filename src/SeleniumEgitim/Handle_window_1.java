@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.Set;
@@ -16,8 +17,8 @@ public class Handle_window_1 {
     public static void main(String[] args) throws InterruptedException {
 
 
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\omero\\Selenium\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "C:/Users/Mehmet G/Selenium/Chrome Driver/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
         driver.get("http://www.demo.guru99.com/popup.php");
