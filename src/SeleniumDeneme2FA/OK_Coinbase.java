@@ -39,7 +39,7 @@ public class OK_Coinbase {
 
 
         //şifre kutusuna tıkla
-        driver.findElement(By.id("Parola")).click();
+        driver.findElement(By.xpath("//input[@type='password']")).click();
         Thread.sleep(1000);
 
         //şifre gir
