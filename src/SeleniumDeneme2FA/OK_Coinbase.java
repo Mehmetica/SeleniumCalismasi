@@ -26,10 +26,10 @@ public class OK_Coinbase {
         driver.manage().window().maximize();
 
 
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         //mail adresi kutusuna tıkla
         driver.findElement(By.xpath("//input[@data-testid='input-username']")).click();
-        Thread.sleep(1000);
+        Thread.sleep(1500);
         //mail adresi gir
         driver.findElement(By.xpath("//input[@data-testid='input-username']")).sendKeys(Objects.eMail);
         Thread.sleep(1500);
