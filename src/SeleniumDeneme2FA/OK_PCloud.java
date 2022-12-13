@@ -10,6 +10,7 @@ public class OK_PCloud {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.pcloud.com/tr/eu");
         driver.manage().window().maximize();
+        driver.findElement(By.xpath("//div[@class='Modal__OvalModalClose-dFihMu fLkzlo']")).click();
         driver.findElement(By.xpath("//a[@class='UserHeader__Sign-hDcTWm efPTnN']")).click();
         driver.findElement(By.xpath("//input[@class='WebStyles__Input-gmVoag caiDsQ']")).click();
         driver.findElement(By.xpath("//input[@class='WebStyles__Input-gmVoag caiDsQ']")).sendKeys("m.gzr.160588@gmail.com");
