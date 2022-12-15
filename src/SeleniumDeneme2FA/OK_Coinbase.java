@@ -32,9 +32,9 @@ public class OK_Coinbase {
         Thread.sleep(1500);
         //mail adresi gir
         driver.findElement(By.xpath("//input[@data-testid='input-username']")).sendKeys(Objects.eMail);
-        Thread.sleep(1500);
+        Thread.sleep(2000);
 
-        driver.findElement(By.xpath("//span[text()='Devam et']")).click();
+        driver.findElement(By.xpath("//span[text()='Devam et' or text()='Continue']")).click();
         Thread.sleep(1500);
 
 
@@ -50,7 +50,7 @@ public class OK_Coinbase {
 
 
         //login butonuna tıkla
-        driver.findElement(By.xpath("//span[text()='Devam et']")).click();
+        driver.findElement(By.xpath("//span[text()='Devam et' or text()='Continue']")).click();
 
 
     }

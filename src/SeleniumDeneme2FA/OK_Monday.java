@@ -31,10 +31,10 @@ public class OK_Monday {
         driver.findElement(By.xpath("//button[@data-testid='button']")).click();
         Thread.sleep(3000);
 
-        driver.findElement(By.xpath("//input[@placeholder='Şifre']")).click();
+        driver.findElement(By.xpath("//input[@id='user_password']")).click();
         Thread.sleep(1000);
 
-        driver.findElement(By.xpath("//input[@placeholder='Şifre']")).sendKeys(Objects.password);
+        driver.findElement(By.xpath("//input[@id='user_password']")).sendKeys(Objects.password);
 
         driver.findElement(By.xpath("//button[@data-testid='button']")).click();
 

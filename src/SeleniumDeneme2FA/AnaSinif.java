@@ -25,7 +25,6 @@ public class AnaSinif {
         pCloud.pcloud();
         elastic.elastic();
         cex.cex();
-        wazirx.wazirx();
         vagrant.vagrant();
         kaspersky.kaspersky();
         bitly.bitly();
